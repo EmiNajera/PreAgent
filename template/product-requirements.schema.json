@@ -1,0 +1,47 @@
+{
+  "productRequirements": {
+    "projectName": "",
+    "version": "1.0",
+    "lastUpdated": "",
+    "targetUsers": {
+      "primaryPersona": {
+        "name": "",
+        "demographics": "",
+        "painPoints": [],
+        "goals": [],
+        "techSavviness": ""
+      },
+      "secondaryPersonas": []
+    },
+    "problemStatement": {
+      "primaryProblem": "",
+      "problemContext": "",
+      "currentSolutions": [],
+      "limitations": []
+    },
+    "coreFeatures": {
+      "mustHave": [
+        {
+          "feature": "",
+          "description": "",
+          "userStory": "",
+          "acceptanceCriteria": [],
+          "priority": "P0"
+        }
+      ],
+      "shouldHave": [],
+      "couldHave": []
+    },
+    "exclusions": {
+      "outOfScope": [],
+      "futureVersions": [],
+      "deliberatelyExcluded": []
+    },
+    "successMetrics": {
+      "userAcquisition": [],
+      "engagement": [],
+      "retention": [],
+      "revenue": []
+    }
+  }
+}

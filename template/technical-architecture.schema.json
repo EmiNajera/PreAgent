@@ -1,0 +1,68 @@
+{
+  "technicalArchitecture": {
+    "projectDetails": {
+      "projectName": "",
+      "version": "1.0",
+      "lastUpdated": ""
+    },
+    "techStack": {
+      "frontend": {
+        "framework": "",
+        "language": "",
+        "styling": "",
+        "stateManagement": "",
+        "buildTool": ""
+      },
+      "backend": {
+        "runtime": "",
+        "framework": "",
+        "language": "",
+        "orm": "",
+        "authentication": "",
+        "apiStyle": ""
+      },
+      "database": {
+        "primary": "",
+        "cache": "",
+        "fileStorage": ""
+      },
+      "deployment": {
+        "hosting": "",
+        "ciCd": "",
+        "monitoring": ""
+      }
+    },
+    "databaseSchema": {
+      "tables": [],
+      "relationships": []
+    },
+    "apiStructure": {
+      "baseUrl": "",
+      "authentication": {
+        "type": "",
+        "provider": ""
+      },
+      "endpoints": {},
+      "errorFormat": {
+        "error": "string",
+        "message": "string",
+        "code": 0,
+        "details": {}
+      }
+    },
+    "fileStructure": {
+      "directories": {
+        "app": [],
+        "components": [],
+        "lib": [],
+        "types": []
+      },
+      "conventions": {
+        "components": "",
+        "utilities": "",
+        "constants": "",
+        "routes": ""
+      }
+    }
+  }
+}
