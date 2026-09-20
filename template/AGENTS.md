@@ -148,3 +148,29 @@ project-root/
 ---
 
 *🧠 Read the docs. Execute the group. Report. Stop. No vibe coding.*
+
+
+---
+
+## 🖥️ Entorno de desarrollo — modelo de trabajo (2026-09-20)
+
+**Esta carpeta local es solo el repositorio de código. No es donde corren las apps.**
+
+| Capa | Dónde vive |
+|---|---|
+| Código | Git. Esta carpeta es una copia de trabajo |
+| Entorno de desarrollo | VPS `dev` (`ssh dev`, nodo `vps-dev` en Tailscale) |
+| Producción | VPS `prod` (`ssh prod`), aislado |
+| Equipo personal | La Mac es interfaz, no infraestructura |
+
+Reglas para cualquier agente que trabaje en este proyecto:
+
+1. **No levantes Postgres, Redis ni MinIO en la Mac.** Ya corren en `dev`. El `.env.local` apunta a la IP del tailnet (`100.127.96.25`), nunca a `0.0.0.0` ni a la IP pública.
+2. **La app sí puede correr en la Mac** en `localhost`, con la infraestructura y los datos en `dev`. Es el modo normal para iterar.
+3. **Se ejecuta completo en `dev`** lo que traiga workers, crons, Docker o dependencias de Linux.
+4. **Todo contenedor nace de un compose versionado.** Prohibido `docker run` a mano para servicios que deban sobrevivir.
+5. **Los secretos no entran a Git.** Se copian de `.env.example` a `.env.local`; la fuente es `pass` en la Mac.
+6. **Nada de datos reales de producción en `dev`.**
+
+Procedimiento completo: `workspace/02 - Entorno de Desarrollo Remoto.md`
+Mapa de máquinas: `workspace/01 - Ecosistema.md`
